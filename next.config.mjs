@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
+  images: {
+    domains: ['encrypted-tbn0.gstatic.com','media.licdn.com'],
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -21,6 +25,7 @@ const nextConfig = {
         use: ["@svgr/webpack"],
       }
     );
+
 
     // Modify the file loader rule to ignore *.svg, since we have it handled now.
     fileLoaderRule.exclude = /\.svg$/i;

@@ -3,9 +3,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const logos = [
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716817722/Amazon_icon.svg_a4qmtg.png",
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716800282/Apple_logo_black.svg_seeetv.png",
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716800359/WISE.L-b3d3de3c_rexehe.png"
+  "https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/512/file-code-1024.png",
+  "https://cdn0.iconfinder.com/data/icons/logos-21/40/Docker-1024.png",
+  "https://cdn1.iconfinder.com/data/icons/business-startup-14/60/Development-1024.png",
 ];
 
 const lineWidth = 80; 
@@ -74,7 +74,7 @@ const maxData = Math.max(...data);
 const chartHeight = 400;
 const chartWidth = 800;
 
-const CardWithEffect = ({ children }: { children: React.ReactNode }) => {
+export const CardWithEffect = ({ children }: { children: React.ReactNode }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
 
@@ -276,8 +276,8 @@ const BentoBox1 = () => {
             <div className="flex flex-col justify-center h-full">
               <LogoBeam />
               <div className="text-left p-6">
-                <h1 className="text-white text-2xl font-bold mb-2">Multiple Technologies</h1>
-                <p className="text-white/70 text-lg">Fly through your tasks with rapid-fire keyboard shortcuts for everything. Literally everything.</p>
+                <h1 className="text-white text-2xl font-bold mb-2">Simplifying the Compilation Workflow</h1>
+                <p className="text-white/70 text-lg">Develop, compile, optimize, input, and output—all in one seamless process.</p>
               </div>
             </div>
           </CardWithEffect>
